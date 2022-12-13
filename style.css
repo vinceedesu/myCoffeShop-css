@@ -4,13 +4,15 @@
     --leftColor:#592F25;
     --rightColor:#f1e8b0;
     --textColor:#BF8654;
+    --headerColor:#2b2a2a;
+    --hoverColor:#403532;
 }
 
 *{
     font-family: verdana;
     margin: 0%;
     padding: 0%;
-    background-color: var(--bgcolor);
+    background-color: var(--headerColor);
 }
 html{
     scroll-behavior: smooth;
@@ -37,44 +39,213 @@ html{
 #leftColumn{
     background-color:var(--leftColor);
     /* position: relative; */
-    padding-left: 20px;
     left: 0px;
-    width: 124px;
+    width: 164px;
     margin-top: 80px;
     height: 100vh;
     float: left;
-    white-space: pre-line;
     position: fixed;
 }
-
+#leftColumn ul{
+    background-color: var(--leftColor);
+    text-decoration: none;
+    list-style: none;
+    color: var(--textColor);
+    width: 100%;
+    margin-top: 175px;
+}
+#leftColumn li{
+    background-color: var(--leftColor);
+    text-decoration: none;
+    color: var(--textColor);
+    text-align: center;
+    align-items: center;
+    width: 164px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* padding-top: px; */
+}
+#leftColumn li:hover{
+    background-color: var(--hoverColor);
+    transition: 0.5s;
+}
 #leftColumn a{
     background-color: var(--leftColor);
     text-decoration: none;
     color: var(--textColor);
 }
 
+#leftColumn a:hover{
+    background-color: var(--rightColor);
+}
+
 #Home{
     background-color: var(--rightColor);
     margin-top: 80px;
     position: static;
-    width: 85%;
+    width: 88%;
     height: 100vh;
-    /* padding: 10px; */
+    padding: 10px;
     float: right;
 }
 
-#Home p, #Home ul, #Home li{
+#Home h1{
+    font-size: 64px;
     background-color: var(--rightColor);
+    color:var(--headerColor) ;
+    margin-left: 56px;
+    text-transform: capitalize;
+}
+#Home h3{
+    font-size: 26px;
+    background-color: var(--rightColor);
+    color:var(--headerColor) ;
+    padding-top: 13px ;
+    margin-left: 56px;
+    text-transform: capitalize;
 }
 
+ul, li, p{
+    background-color: var(--rightColor);
+}
+#Home ul{
+    margin-left: 76px;
+    font-size: 28px;
+    list-style: none;
+}
+#Home p{
+    margin-left: 76px;
+    font-size: 28px;
+    list-style: none;
+}
 #CoffeePic{
     position: static;
     float: right;
-    margin-right: 36px;
-    margin-top: 36px;
-    border-radius: 50%;
+    margin-top: 123px;
+    margin-right: 86px;
+    /* border-radius: 50px; */
+    background-color: var(--rightColor);
 }
 
+#coffeeMenu{
+    position: static;
+    float: right;
+    margin-right: 86px;
+    margin-top: 46px;
+    border-radius: 50px;
+}
+
+
+
+#Menu{
+    background-color: var(--rightColor);
+    position: static;
+    width: 88%;
+    height: 100vh;
+    padding: 10px;
+    float: right;
+}
+#Menu h1{
+    padding-top: 80px;
+    background-color: var(--rightColor);
+    font-size: 64px;
+    text-align: center;
+    color: var(--headerColor);
+}
+#Location{
+    background-color: var(--rightColor);
+    position: static;
+    width: 88%;
+    height: 100vh;
+    padding: 10px;
+    float: right;
+}
+#Location h1{
+    padding-top: 80px;
+    background-color: var(--rightColor);
+    font-size: 64px;
+    /* text-align: center; */
+    color: var(--headerColor);
+}
+
+#Location h3{
+    font-size: 26px;
+    background-color: var(--rightColor);
+    color:var(--headerColor) ;
+    padding-top: 13px ;
+    margin-left: 0;
+    text-transform: capitalize;
+}
+
+#locationPic{
+    position: static;
+    float: right;
+    margin-right: 86px;
+    margin-top: 0;
+    border-radius: 50px;
+}
+.Location{
+   
+        background-color: var(--rightColor);
+        position: static;
+        width: 88%;
+        height: 100vh;
+        padding: 10px;
+        float: right;
+   
+}
+#Location ul{
+    margin-left: 76px;
+    font-size: 28px;
+}
+
+#Location a{
+    background-color: var(--rightColor);
+    text-decoration: none;
+    color: var(--textColor);   
+}
+#Jobs{
+    background-color: var(--rightColor);
+    position: static;
+    width: 88%;
+    height: 100vh;
+    padding: 10px;
+    float: right;
+}
+.Jobs{
+    background-color: var(--rightColor);
+    position: static;
+    width: 88%;
+    height: 100vh;
+    padding: 10px;
+    float: right;
+}
+#Jobs h1{
+    padding-top: 80px;
+    background-color: var(--rightColor);
+    font-size: 64px;
+    text-align: center;
+    color: var(--headerColor);
+}
+#Jobs h3{
+    font-size: 26px;
+    background-color: var(--rightColor);
+    color:var(--headerColor) ;
+    padding-top: 13px ;
+    margin-left: 0;
+    text-transform: capitalize;
+}
+#Jobs ul{
+    margin-left: 76px;
+    font-size: 28px;
+}
+#jobPic{
+    position: static;
+    float: right;
+    margin-right: 86px;
+    margin-top: -200px;
+    border-radius: 50px;
+}
 #footer{
     background-color: var(--logocolor);
     text-align: center;
@@ -88,22 +259,12 @@ html{
     color: var(--textColor);
 }
 
-
 .footerContent{
     background-color: var(--logocolor);
+    padding-top: 15px;
 }
 #footer a{
     background-color: var(--logocolor);
     text-decoration: none;
-    color: var(--textColor);
-    
-}
-
-#Menu{
-    background-color: var(--rightColor);
-    position: static;
-    width: 85%;
-    height: 100vh;
-    /* padding: 10px; */
-    float: right;
+    color: var(--textColor);   
 }
