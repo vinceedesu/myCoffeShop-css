@@ -1,19 +1,109 @@
 :root{
-    --bgcolor:#ffffcc;
-    --logocolor:#ccaa66;
-    --leftColor:#e8d882;
+    --bgcolor:#A67360;
+    --logocolor:#261717;
+    --leftColor:#592F25;
     --rightColor:#f1e8b0;
+    --textColor:#BF8654;
 }
 
 *{
     font-family: verdana;
+    margin: 0%;
+    padding: 0%;
+    background-color: var(--bgcolor);
 }
-
+html{
+    scroll-behavior: smooth;
+}
 #logo{
     background-color: var(--logocolor);
     text-align: center;
-    border-bottom-style: solid;
-    border-top-style: solid;
     height: 80px;
+    width: 100%;
     margin: 0;    
+    float: top;
+    top: 0px;
+    height: 80px;
+    white-space: pre-line;
+    position: fixed;
+}
+
+#logo h1{
+    background-color: var(--logocolor);
+    /* padding-top: 20px; */
+    color:var(--textColor);
+}
+
+#leftColumn{
+    background-color:var(--leftColor);
+    /* position: relative; */
+    padding-left: 20px;
+    left: 0px;
+    width: 124px;
+    margin-top: 80px;
+    height: 100vh;
+    float: left;
+    white-space: pre-line;
+    position: fixed;
+}
+
+#leftColumn a{
+    background-color: var(--leftColor);
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+#Home{
+    background-color: var(--rightColor);
+    margin-top: 80px;
+    position: static;
+    width: 85%;
+    height: 100vh;
+    /* padding: 10px; */
+    float: right;
+}
+
+#Home p, #Home ul, #Home li{
+    background-color: var(--rightColor);
+}
+
+#CoffeePic{
+    position: static;
+    float: right;
+    margin-right: 36px;
+    margin-top: 36px;
+    border-radius: 50%;
+}
+
+#footer{
+    background-color: var(--logocolor);
+    text-align: center;
+    height: 80px;
+    width: 100%;
+    margin: 0;    
+    float: top;
+    bottom: 0px;
+    height: 80px;
+    position: fixed;
+    color: var(--textColor);
+}
+
+
+.footerContent{
+    background-color: var(--logocolor);
+}
+#footer a{
+    background-color: var(--logocolor);
+    text-decoration: none;
+    color: var(--textColor);
+    
+}
+
+#Menu{
+    background-color: var(--rightColor);
+    position: static;
+    width: 85%;
+    height: 100vh;
+    /* padding: 10px; */
+    float: right;
 }
