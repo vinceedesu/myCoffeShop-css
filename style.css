@@ -1,0 +1,19 @@
+:root{
+    --bgcolor:#ffffcc;
+    --logocolor:#ccaa66;
+    --leftColor:#e8d882;
+    --rightColor:#f1e8b0;
+}
+
+*{
+    font-family: verdana;
+}
+
+#logo{
+    background-color: var(--logocolor);
+    text-align: center;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    height: 80px;
+    margin: 0;    
+}
