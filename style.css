@@ -5,7 +5,7 @@
     --rightColor:#f1e8b0;
     --textColor:#BF8654;
     --headerColor:#2b2a2a;
-    --hoverColor:#403532;
+    --hoverColor:#301f1a;
 }
 
 *{
@@ -40,7 +40,7 @@ html{
     background-color:var(--leftColor);
     /* position: relative; */
     left: 0px;
-    width: 164px;
+    width: 214px;
     margin-top: 80px;
     height: 100vh;
     float: left;
@@ -60,7 +60,7 @@ html{
     color: var(--textColor);
     text-align: center;
     align-items: center;
-    width: 164px;
+    width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
     /* padding-top: px; */
@@ -90,6 +90,7 @@ html{
 }
 
 #Home h1{
+    margin-top: 56px;
     font-size: 64px;
     background-color: var(--rightColor);
     color:var(--headerColor) ;
@@ -130,8 +131,8 @@ ul, li, p{
 #coffeeMenu{
     position: static;
     float: right;
-    margin-right: 86px;
-    margin-top: 46px;
+    margin-right: 156px;
+    margin-top: 66px;
     border-radius: 50px;
 }
 
@@ -146,6 +147,7 @@ ul, li, p{
     float: right;
 }
 #Menu h1{
+    margin-top: 103px;
     padding-top: 80px;
     background-color: var(--rightColor);
     font-size: 64px;
@@ -180,7 +182,7 @@ ul, li, p{
 #locationPic{
     position: static;
     float: right;
-    margin-right: 86px;
+    margin-right: 106px;
     margin-top: 0;
     border-radius: 50px;
 }
